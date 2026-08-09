@@ -1,0 +1,54 @@
+
+        :root {
+            --primary: #0067b8;
+            --text: #222;
+            --muted: #666;
+            --border: #dcdcdc;
+            --bg: #fafafa;
+        }
+
+        body {
+            font-family: "Segoe UI", "Segoe UI Variable", system-ui,
+                         -apple-system, BlinkMacSystemFont,
+                         "Helvetica Neue", Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+        }
+
+        main {
+            background: white;
+            padding: 2rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+
+        h1 {
+            margin-top: 0;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        h2 {
+            font-weight: 500;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
