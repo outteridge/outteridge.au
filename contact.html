@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Peter Outteridge</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script>src="https://challenges.cloudflare.com.js"</script>
+    <script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        async
+        defer>
+    </script>
 </head>
 
 <body>
@@ -62,6 +66,15 @@
             class="cf-turnstile"
             data-sitekey="0x4AAAAAAELgidcdpRA6e7uD">
         </div>
+
+<p id="test"></p>
+<script>
+window.onload = function () {
+    document.getElementById("test").innerText =
+        typeof turnstile;
+};
+
+</script>
 
         <p>
             <button type="submit">
