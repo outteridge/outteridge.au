@@ -94,7 +94,7 @@ document.getElementById('contactForm').addEventListener(
         )?.value;
 
         if (!turnstileToken) {
-            alert('Please complete the verification check.');
+            alert('Complete verification check.');
             return;
         }
 
@@ -122,17 +122,16 @@ document.getElementById('contactForm').addEventListener(
                 window.location.href =
                     'contact-success.html';
             } else {
+                console.error(result);
                 alert(
                     `There was a problem sending your message:\n${result}`
                 );
             }
 
         } catch (error) {
-
             console.error(error);
-
             alert(
-                'There was a problem contacting the server.'
+                `There was a problem contacting the server:\n${error}`
             );
         }
     }
