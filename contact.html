@@ -26,7 +26,6 @@
 
         <div class="form-group">
             <label for="name">Name</label>
-
             <input
                 type="text"
                 id="name"
@@ -36,7 +35,6 @@
 
         <div class="form-group">
             <label for="email">Email</label>
-
             <input
                 type="email"
                 id="email"
@@ -46,14 +44,13 @@
 
         <div class="form-group">
             <label for="message">Message</label>
-
             <textarea
                 id="message"
                 name="message"
                 required></textarea>
         </div>
 
-        <!-- Honeypot spam field -->
+        <!-- Honeypot -->
         <input
             type="text"
             name="website"
@@ -61,20 +58,11 @@
             autocomplete="off"
             style="display:none;">
 
-        <!-- Cloudflare Turnstile -->
+        <!-- Turnstile -->
         <div
             class="cf-turnstile"
-            data-sitekey=""
+            data-sitekey="1x00000000000000000000AA">
         </div>
-
-<p id="test"></p>
-<script>
-window.onload = function () {
-    document.getElementById("test").innerText =
-        typeof turnstile;
-};
-
-</script>
 
         <p>
             <button type="submit">
@@ -130,7 +118,8 @@ document.getElementById('contactForm').addEventListener(
             );
 
             if (response.ok) {
-                window.location.href = 'contact-success.html';
+                window.location.href =
+                    'contact-success.html';
             } else {
                 alert(
                     'Sorry, there was a problem sending your message.'
