@@ -118,13 +118,12 @@ document.getElementById('contactForm').addEventListener(
             );
 
             const result = await response.text();
-            alert(result);
             if (response.ok) {
                 window.location.href =
                     'contact-success.html';
             } else {
                 alert(
-                    'There was a problem sending your message.'
+                    `There was a problem sending your message:\n${result}`
                 );
             }
 
