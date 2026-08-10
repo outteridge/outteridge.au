@@ -117,6 +117,8 @@ document.getElementById('contactForm').addEventListener(
                 }
             );
 
+            const result = await response.text();
+            alert(result);
             if (response.ok) {
                 window.location.href =
                     'contact-success.html';
