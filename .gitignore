@@ -1,5 +1,34 @@
+# OS files
 .DS_Store
 Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
 *.tmp
 *.bak
-*.log
+
+# HTML files
+*.html
+
+# Folders with "archive" in the name (case-insensitive)
+/*[Aa][Rr][Cc][Hh][Ii][Vv][Ee]*/
+**/*[Aa][Rr][Cc][H[Hhh][Ii][Vv][Ee]*/
+
+# Common exclusions
+node_modules/
+dist/
+build/
+out/
+bin/
+obj/
+
+.vscode/
+.idea/
+
+.env
+.env.*
+
+__pycache__/
+*.pyc
