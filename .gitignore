@@ -9,12 +9,17 @@ Thumbs.db
 *.tmp
 *.bak
 
-# HTML files
-*.html
+# Office files
+*.docx
+*.xlsx
+*.pptx
 
-# Folders with "archive" in the name (case-insensitive)
-/*[Aa][Rr][Cc][Hh][Ii][Vv][Ee]*/
-**/*[Aa][Rr][Cc][H[Hhh][Ii][Vv][Ee]*/
+# Ignore test folder and all contents
+test/
+test/**
+
+# Ignore archive folders anywhere
+*[Aa][Rr][Cc][Hh][Ii][Vv][Ee]*/
 
 # Common exclusions
 node_modules/
